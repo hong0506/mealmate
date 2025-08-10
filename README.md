@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽 Mealmate - Meal Management System
 
-## Getting Started
+**Mealmate** is a simple meal management system built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Prisma ORM**.  
+It allows customers to browse menus, add items to their cart, place orders, and for admins to manage menu items and orders.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+- **Next.js** – React framework for building modern web apps
+- **TypeScript** – Type-safe JavaScript
+- **Tailwind CSS** – Utility-first CSS framework
+- **Prisma** – Type-safe ORM for database access
+- **PostgreSQL** – Relational database
+- **JWT Authentication** – User login & registration
+- **LocalStorage** – Client-side cart persistence
+
+---
+
+## 📸 Screenshots
+
+### 1️⃣ Login Page： http://localhost:3000/auth/login
+
+<img src="./assets/login_page.png" alt="Login Page" width="700">
+Users can log in with their email and password to access their account.
+
+### 2️⃣ Register Page: http://localhost:3000/auth/register
+
+<img src="./assets/register_page.png" alt="Register Page" width="700">
+New users can create an account by filling in their details.
+
+### 3️⃣ Menu Page: http://localhost:3000/menu
+
+<img src="./assets/menu_page.png" alt="Menu Page" width="700">
+Displays all available menu items with images, descriptions, and prices.
+
+### 4️⃣ Cart Page: http://localhost:3000/cart
+
+<img src="./assets/cart_page.png" alt="Cart Page" width="700">
+Shows the items added to the cart, allows updating quantities or removing items.
+
+### 5️⃣ Orders Page: http://localhost:3000/orders
+
+<img src="./assets/orders_page.png" alt="Orders Page" width="700">
+Displays a list of past orders placed by the user.
+
+### 6️⃣ Admin Menu Management Page: http://localhost:3000/admin/menu
+
+Login with admin account to access this admin/menu page
+<img src="./assets/admin_menu_page.png" alt="Admin Menu Page" width="700">
+Allows admins to add, update, and delete menu items.
+
+---
+
+## 🛠 How to Run Locally
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Open http://localhost:3000 in your browser
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
